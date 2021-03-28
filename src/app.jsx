@@ -12,13 +12,13 @@ function App() {
     };
 
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=25&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=24&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`,
       requestOptions
     )
       .then((response) => response.json())
       .then((result) => setVideos(result.items))
       .catch((error) => console.log("error", error));
-  });
+  }, []);
 
   return <VideoList videos={videos} />;
 }
