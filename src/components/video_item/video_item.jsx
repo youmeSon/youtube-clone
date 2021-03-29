@@ -13,12 +13,11 @@ const VideoItem = ({ video, video: { snippet } }) => (
         <img
           className={styles.profileImg}
           src={snippet.thumbnails.default.url}
-          alt="Profile image"
+          alt="Profile"
         />
         <div>
           <p className={styles.title}>{snippet.title}</p>
           <p className={styles.channel}>{snippet.channelTitle}</p>
-          <p className={styles.viewCount}>{video.statistics.viewCount} views</p>
         </div>
       </div>
     </li>
