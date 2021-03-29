@@ -10,7 +10,7 @@
   padding: 0 0.5em;
   width: 100%;
   height: 100%;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 0.1em;
   cursor: pointer;
   transition: transform 250ms ease-in;
@@ -40,7 +40,7 @@
 .title {
   margin-bottom: 0;
   font-weight: 400;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .channel {
   margin: 0;
@@ -49,7 +49,7 @@
 }
 
 .channel:hover {
-  color: white;
+  color: rgb(253, 249, 249);
 }
 
 .viewCount {
