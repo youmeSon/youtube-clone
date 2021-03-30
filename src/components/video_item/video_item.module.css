@@ -1,19 +1,32 @@
 .container {
-  width: 25%;
   padding: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.container.grid {
+  width: 25%;
+}
+
+.container.list {
+  width: 100%;
 }
 
 .video {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid non;
   padding: 0 0.5em;
   width: 100%;
   height: 100%;
-  margin-top: 0.5em;
   margin-bottom: 0.1em;
   cursor: pointer;
   transition: transform 250ms ease-in;
+}
+
+.video.list {
+  flex-direction: row;
+  height: 5em;
 }
 
 .video:hover {
@@ -22,6 +35,11 @@
 
 .thumbnail {
   width: 100%;
+}
+
+.thumbnail.list {
+  width: 40%;
+  height: 100%;
 }
 
 .metadata {
@@ -36,15 +54,18 @@
   margin-top: 1.2em;
   margin-right: 0.5em;
 }
+.profileImg.list {
+  display: none;
+}
 
 .title {
-  margin-bottom: 0;
+  margin: 0;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
 .channel {
   margin: 0;
-  margin-top: 0.5em;
+  margin-top: 0.1em;
   color: darkgray;
 }
 
