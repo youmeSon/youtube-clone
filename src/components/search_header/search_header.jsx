@@ -27,10 +27,12 @@ const SearchHeader = ({ onSearch }) => {
 
   return (
     <header className={styles.header}>
-      <i className={`fas fa-bars ${styles.icon}`}></i>
-      <div ref={logoRef} className={styles.logo} onClick={refresh}>
-        <img className={styles.logoImg} src="./images/logo.png" alt="logo" />
-        <h1 className={styles.title}>YouTube</h1>
+      <div className={styles.header_logo}>
+        <i className={`fas fa-bars ${styles.icon}`}></i>
+        <div ref={logoRef} className={styles.logo} onClick={refresh}>
+          <img className={styles.logoImg} src="./images/logo.png" alt="logo" />
+          <h1 className={styles.title}>YouTube</h1>
+        </div>
       </div>
       <input
         ref={inputRef}
@@ -40,11 +42,7 @@ const SearchHeader = ({ onSearch }) => {
         onKeyDown={onKeyPress}
       />
       <button className={styles.searchButton} type="submit" onClick={onClick}>
-        <img
-          className={styles.button}
-          src="./images/search.png"
-          alt="search butoon"
-        />
+        <img className={styles.button} src="./images/search.png" alt="search" />
       </button>
       <i className={`fas fa-microphone ${styles.micIcon}`}></i>
       <div className={styles.icons}>
