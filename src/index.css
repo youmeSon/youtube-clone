@@ -16,8 +16,3 @@ code {
   box-sizing: border-box;
   background-color: #242424;
 }
-
-#root {
-  display: flex;
-  justify-content: center;
-}

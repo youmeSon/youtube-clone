@@ -12,6 +12,9 @@
   color: white;
 }
 
+.title {
+  margin: 0.2em;
+}
 .statistics {
   display: flex;
   justify-content: space-between;
