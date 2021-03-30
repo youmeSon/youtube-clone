@@ -6,11 +6,12 @@ const VideoDetail = ({ video }) => (
       className={styles.video}
       id="ytplayer"
       type="text/html"
+      title="youtube"
       width="100%"
       height="500px"
       src={`https://www.youtube.com/embed/${video.id}`}
-      frameborder="0"
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen
     ></iframe>
     <h2 className={styles.title}>{video.snippet.title}</h2>
     <div className={styles.statistics}>
