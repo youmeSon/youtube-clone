@@ -18,11 +18,6 @@ const VideoItem = memo(
             alt="thumbnail"
           />
           <div className={styles.metadata}>
-            <img
-              className={`${styles.profileImg} ${displayType}`}
-              src={snippet.thumbnails.default.url}
-              alt="Profile"
-            />
             <div className={styles.information}>
               <p className={styles.title}>{snippet.title}</p>
               <p className={styles.channel}>{snippet.channelTitle}</p>

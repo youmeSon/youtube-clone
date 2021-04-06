@@ -16,17 +16,26 @@ const VideoDetail = ({ video }) => (
     <h2 className={styles.title}>{video.snippet.title}</h2>
     <div className={styles.statistics}>
       <span className={styles.viewCount}>
-        {video.statistics.viewCount} views
+        {video.statistics.viewCount
+          .toString()
+          .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}{" "}
+        views
       </span>
       <div className={styles.icons}>
         <div className={styles.thumbsUp}>
           <i class="far fa-thumbs-up"></i>
-          <span className={styles.like_span}>{video.statistics.likeCount}</span>
+          <span className={styles.like_span}>
+            {video.statistics.likeCount
+              .toString()
+              .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+          </span>
         </div>
         <div className={styles.thumbsDown}>
           <i class="far fa-thumbs-down"></i>
           <span className={styles.dislike_span}>
-            {video.statistics.dislikeCount}
+            {video.statistics.dislikeCount
+              .toString()
+              .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
           </span>
         </div>
         <div className={styles.share}>
@@ -44,7 +53,12 @@ const VideoDetail = ({ video }) => (
     <h4 className={styles.channelTitle}>{video.snippet.channelTitle}</h4>
     <pre className={styles.description}>{video.snippet.description}</pre>
     <hr className={styles.line} />
-    <h3 className={styles.comment}>{video.statistics.commentCount} Comments</h3>
+    <h3 className={styles.comment}>
+      {video.statistics.commentCount
+        .toString()
+        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}{" "}
+      Comments
+    </h3>
   </section>
 );
 

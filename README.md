@@ -1,4 +1,4 @@
-# Youetube Clone
+# Youtube Clone
 
 Youtube clone with React
 
@@ -41,11 +41,10 @@ Try to make a simple youtube page using Youtube API.
 
 4. Problem and solving
 
-   ❗ I can't get statistics information when I get youtube-search API
-
-   ➡ Try to get channel Id and fetch the api one more time?
-
    ❗ There are some weird blank background on the default page
+   ➡ Add the background color to video_item information
+
+   ✅ Done
 
 5. What I learn
 

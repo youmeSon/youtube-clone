@@ -15,7 +15,6 @@
 .video {
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 1px solid non;
   padding: 0 0.5em;
   width: 100%;
@@ -46,23 +45,13 @@
 
 .metadata {
   display: flex;
-  padding: 0 0.5em;
+  padding: 0.5em 0.5em;
   background: #121212;
 }
 
 .information {
   margin: 0;
-}
-
-.profileImg {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  margin-top: 1.2em;
-  margin-right: 0.5em;
-}
-.profileImg.list {
-  display: none;
+  background-color: #121212;
 }
 
 .title {

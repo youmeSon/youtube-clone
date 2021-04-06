@@ -14,9 +14,29 @@ function App({ youtube }) {
 
   const search = (query) => {
     setSelectedVideo(null);
+    let id = "";
+    let channelId = "";
     youtube
       .search(query) //
-      .then((videos) => setVideos(videos));
+      .then((videos) => {
+        for (let i = 0; i < videos.length; i++) {
+          if (i === videos.length - 1) {
+            id += videos[i].id;
+          } else {
+            id += `${videos[i].id},`;
+          }
+        }
+      })
+      .then(() => {
+        youtube
+          .videos(id) //
+          .then((res) => {
+            setVideos(res);
+            for (let i = 0; i < res.length; i++) {
+              channelId += `&id=${res[i].snippet.channelId}`;
+            }
+          });
+      });
   };
 
   useEffect(() => {
