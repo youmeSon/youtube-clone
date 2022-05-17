@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/youtube-clone/static/css/main.5333018a.chunk.css",
-    "main.js": "/youtube-clone/static/js/main.4f53e7e0.chunk.js",
-    "main.js.map": "/youtube-clone/static/js/main.4f53e7e0.chunk.js.map",
+    "main.css": "/youtube-clone/static/css/main.08d5454d.chunk.css",
+    "main.js": "/youtube-clone/static/js/main.6841da44.chunk.js",
+    "main.js.map": "/youtube-clone/static/js/main.6841da44.chunk.js.map",
     "runtime-main.js": "/youtube-clone/static/js/runtime-main.da2c1662.js",
     "runtime-main.js.map": "/youtube-clone/static/js/runtime-main.da2c1662.js.map",
     "static/js/2.9dabd9e7.chunk.js": "/youtube-clone/static/js/2.9dabd9e7.chunk.js",
     "static/js/2.9dabd9e7.chunk.js.map": "/youtube-clone/static/js/2.9dabd9e7.chunk.js.map",
     "index.html": "/youtube-clone/index.html",
-    "static/css/main.5333018a.chunk.css.map": "/youtube-clone/static/css/main.5333018a.chunk.css.map",
+    "static/css/main.08d5454d.chunk.css.map": "/youtube-clone/static/css/main.08d5454d.chunk.css.map",
     "static/js/2.9dabd9e7.chunk.js.LICENSE.txt": "/youtube-clone/static/js/2.9dabd9e7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.da2c1662.js",
     "static/js/2.9dabd9e7.chunk.js",
-    "static/css/main.5333018a.chunk.css",
-    "static/js/main.4f53e7e0.chunk.js"
+    "static/css/main.08d5454d.chunk.css",
+    "static/js/main.6841da44.chunk.js"
   ]
 }
