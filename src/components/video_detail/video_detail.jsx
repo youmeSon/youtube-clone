@@ -30,7 +30,14 @@ const VideoDetail = ({ video }) => (
               .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
           </span>
         </div>
-
+        <div className={styles.thumbsDown}>
+          <i class="far fa-thumbs-down"></i>
+          <span className={styles.dislike_span}>
+            {video.statistics.dislikeCount
+              .toString()
+              .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+          </span>
+        </div>
         <div className={styles.share}>
           <i class="fas fa-share"></i>
           <span className={styles.share_span}>SHARE</span>
