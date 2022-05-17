@@ -40,6 +40,10 @@ Try to make a simple youtube page using Youtube API.
 | Search       | ![Default page](readMeImage/selected_video.png)<br>Video selected                   |
 
 4. Problem and solving
+   🥵 17/05/2022 
+   ❗ video detail page is not working!! 
+   ➡ Youtube don't use 'dislike count' anymore : so I removed it
+   ✅ Done
 
    ❗ There are some weird blank background on the default page
    ➡ Add the background color to video_item information
